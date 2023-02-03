@@ -1,0 +1,28 @@
+# YOLOv5 🚀 
+# Example usage: python train.py --data xuchuang.yaml
+# parent
+# ├── yolov5
+# └── xuchuang_data
+#     └── FR4-valid2
+#         └──images
+#             └──train
+#                 └──*.jpg/*.png/...
+#             └──val
+#                 └──*.jpg/*.png/...
+#         └──labels
+#             └──train
+#                 └──*.txt
+#             └──val
+#                 └──*.txt
+# 
+
+
+# Train/val/test sets as 1) dir: path/to/imgs, 2) file: path/to/imgs.txt, or 3) list: [path/to/imgs1, path/to/imgs2, ..]
+path: ./xuchuang_data/FR4-valid2  # dataset root dir
+train: images/train  # train images (relative to 'path') 128 images
+val: images/val # val images (relative to 'path') 128 images
+test:  # test images (optional)
+
+# Classes
+nc: 3  # number of classes
+names: ['溢胶','脏污','破损']
